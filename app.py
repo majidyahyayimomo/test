@@ -9,8 +9,8 @@ from main import app   # ← main اینجا به‌عنوان ماژول لود
 
 if __name__ == "__main__":
     import uvicorn
-    # PORT را می‌خواند؛ اگر نبود پورت تخصیصی پنل (SERVER_PORT)؛ در نهایت 40681
-    port = int(os.environ.get("PORT") or os.environ.get("SERVER_PORT") or 40681)
+    # PORT را می‌خواند؛ اگر نبود پورت تخصیصی پنل (SERVER_PORT)؛ در نهایت 10251
+    port = int(os.environ.get("PORT") or os.environ.get("SERVER_PORT") or 10251)
     print(f"omid launcher → starting on 0.0.0.0:{port}")
     uvicorn.run(app, host="0.0.0.0", port=port)
     
